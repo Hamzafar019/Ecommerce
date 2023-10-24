@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profit Result</title>
+    <style>
+        /* Reset some default styles to ensure consistent rendering */
+        body, h1, p, a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        /* Apply background color and set font family */
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        /* Style the container */
+        .container {
+            text-align: center;
+            max-width: 400px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Style the result message */
+        h1 {
+            font-size: 44px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        /* Style the "Calculate Another Profit" link */
+        a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        
+        a:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Profit</h1>
+    <p><b>Rs.</b>{{ profit }}</p>
+    <a href="{% url 'calculate_profit' %}">Calculate Another Profit</a>
+</body>
+</html>

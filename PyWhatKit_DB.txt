@@ -1,0 +1,55 @@
+Date: 18/9/2023
+Time: 19:18
+Phone Number: +923421125789
+Message: Hello, here is your invoice.
+--------------------
+Date: 18/9/2023
+Time: 19:26
+Phone Number: +923421125789
+Message: Hello, here is your invoice.
+--------------------
+Date: 18/9/2023
+Time: 20:36
+Phone Number: +923421125789
+Message: pdf_bytes
+--------------------
+Date: 18/9/2023
+Time: 21:27
+Phone Number: +923421125789
+Message: Name: Alitable, 10.00, 100.00Bridge2, 10.00, 200.00Total Amount 300.00Discount 0.00After Discount 300.00Commission 0.00Total Price 300.00Previous Commission 9.90Total Commission 9.90Paid No
+--------------------
+Date: 18/9/2023
+Time: 21:56
+Phone Number: +923421125789
+Message: Name: AliOrder ID: 29Order Details Product Name: table, Quantity: 10.00, Price: 100.00Product Name: Bridge2, Quantity: 10.00, Price: 200.00---------------Total Amount 300.00Discount 0.00After Discount 300.00Commission 0.00Total Price 300.00Previous Commission 9.90Total Commission 9.90Paid No
+--------------------
+Date: 18/9/2023
+Time: 22:9
+Phone Number: +923432520320
+Message: Name: newOrder Id: 25Total Amount: 3.00Discount: 0.00After Discount: 3.00Balance: 0.00Total Amount: 3.00Paid: No
+--------------------
+Date: 18/9/2023
+Time: 22:15
+Phone Number: +923432520320
+Message: Name: newOrder Id: 25Total Amount: 0.00Discount: 0.00After Discount: 0.00Balance: 0.00Total Amount: 0.00Paid: No
+--------------------
+Date: 18/9/2023
+Time: 22:17
+Phone Number: +923421125789
+Message: Name: new2Order Id: 23Prdouct Name: Bridge Quantity: 1.00 Price: 100.00Total Amount: 100.00Discount: 20.00After Discount: 80.00Balance: 20800.00Total Amount: 20880.00Paid: No
+--------------------
+Date: 18/9/2023
+Time: 22:19
+Phone Number: +923421125789
+Message: Name: new2Order Id: 23Prdouct Name: Bridge Quantity: 1.00 Price: 100.00Total Amount: 100.00Discount: 20.00After Discount: 80.00Balance: 20800.00Total Amount: 20880.00Paid: No
+--------------------
+Date: 18/9/2023
+Time: 22:19
+Phone Number: +923432520320
+Message: Name: newOrder Id: 25Total Amount: 0.00Discount: 0.00After Discount: 0.00Balance: 0.00Total Amount: 0.00Paid: No
+--------------------
+Date: 18/9/2023
+Time: 22:32
+Phone Number: +923421125789
+Message: Name: AhmedOrder Id: 29Prdouct Name: table Quantity: 10.00 Price: 100.00Prdouct Name: Bridge2 Quantity: 10.00 Price: 200.00Total Amount: 300.00Discount: 0.00After Discount: 300.00Balance: 109.00Total Amount: 409.00Paid: No
+--------------------

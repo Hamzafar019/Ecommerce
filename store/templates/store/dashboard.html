@@ -1,0 +1,81 @@
+<style>
+/* Style for the form */
+body{
+    background-color: antiquewhite;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light gray background color */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+}
+
+/* Style for the label and input */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the displayed totals */
+div {
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* White background color */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle depth effect */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    form {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    div {
+        width: 100%;
+    }
+}
+
+</style>
+<form method="post">
+    {% csrf_token %}
+    {{ form.show_calculations.label_tag }}
+    {{ form.show_calculations }}
+    <input type="submit" value="Apply">
+</form>
+
+{% if show_calculations %}
+    <div>
+        <h2>Total Material Cost: {{ total_material_cost_from_purchases }}</h2>
+        <h2>Total Investment: {{ total_investment }}</h2>
+        <h2>Total Sales: {{ total_sales }}</h2>
+    </div>
+{% endif %}

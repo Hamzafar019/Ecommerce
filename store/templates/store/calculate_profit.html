@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Profit</title>
+    <style>
+/* Reset some default styles to ensure consistent rendering */
+body, h1, p, select, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply background color and set font family */
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure full viewport height */
+}
+
+/* Style the form */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Style form elements */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the profit result */
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Style the link to calculate another profit */
+.result a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.result a:hover {
+    text-decoration: underline;
+}
+/* Your previous CSS code here */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    /* Adjust form width for smaller screens */
+    form {
+        max-width: 300px;
+    }
+}
+
+        
+    </style>
+</head>
+<body>
+    <h1>Calculate Profit</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="product">Select Product:</label>
+        <select id="product" name="product">
+            {% for product in products %}
+                <option value="{{ product.id }}">{{ product.name }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity"><br>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price"><br>
+
+        <label for="discount_code">Discount Code:</label>
+        <select id="discount_code" name="discount_code">
+            {% for code in discount_codes %}
+                <option value="{{ code.code }}">{{ code.code }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="commission_code">Commission Code:</label>
+        <select id="commission_code" name="commission_code">
+            {% for code in commission_codes %}
+                <option value="{{ code.code }}">{{ code.code }}</option>
+            {% endfor %}
+        </select><br>
+
+        <input type="submit" value="Calculate Profit">
+    </form>
+</body>
+</html>
+
